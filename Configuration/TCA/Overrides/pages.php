@@ -4,7 +4,7 @@ use TYPO3\CMS\Core\Utility\ArrayUtility;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 $languageFilePrefix = 'LLL:EXT:t3starter_news/Resources/Private/Language/locallang_be.xlf:';
-$newsDokType = 12;
+$newsDokType = 119;
 $table = 'pages';
 
 // Copy palette configuration from "title" to new "title_for_news"
@@ -45,11 +45,11 @@ $GLOBALS['TCA']['pages']['types'][$newsDokType]['showitem'] = str_replace(
 );
 
 // Register the pageTsCconfig for restricting Page generation to only News Pages
-ExtensionManagementUtility::registerPageTSConfigFile(
-    't3starter_news',
-    'Configuration/TsConfig/Page/News.tsconfig',
-    'Restrict to news pages'
-);
+//ExtensionManagementUtility::registerPageTSConfigFile(
+//    't3starter_news',
+//    'Configuration/TsConfig/Page/News.tsconfig',
+//    'Restrict to news pages'
+//);
 
 // Add new page type as possible select item:
 ExtensionManagementUtility::addTcaSelectItem(

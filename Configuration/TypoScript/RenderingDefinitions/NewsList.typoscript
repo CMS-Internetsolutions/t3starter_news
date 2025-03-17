@@ -15,7 +15,7 @@ tt_content {
         where.cObject = COA
         where.cObject {
           10 = TEXT
-          10.value = NOT pages.hidden AND pages.doktype = 12
+          10.value = NOT pages.hidden AND pages.doktype = 119
           20 = TEXT
           20 {
             noTrimWrap = | AND sys_category_record_mm.uid_local IN (|)|

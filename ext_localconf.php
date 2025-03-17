@@ -8,12 +8,12 @@ use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 
 defined('TYPO3_MODE') || defined('TYPO3') || die('Access denied.');
 
-$newsDokType = 12;
+$newsDokType = 119;
 
 // Adds page TypoScript for the news list content element
-ExtensionManagementUtility::addPageTSConfig(
-    '@import \'EXT:t3starter_news/Configuration/TsConfig/Page/News.tsconfig\''
-);
+//ExtensionManagementUtility::addPageTSConfig(
+//    '@import \'EXT:t3starter_news/Configuration/TsConfig/Page/News.tsconfig\''
+//);
 
 // Provide icon for page tree, list view, ... :
 GeneralUtility::makeInstance(IconRegistry::class)

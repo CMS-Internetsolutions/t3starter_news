@@ -1,5 +1,6 @@
-TCEFORM.pages {
-  doktype {
-    keepItems = 12
-  }
-}
+## uncomment in ext_localconf.php and pages.php
+#TCEFORM.pages {
+#  doktype {
+    #keepItems = 119
+#  }
+#}
