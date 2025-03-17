@@ -1,0 +1,13 @@
+lib.contentElement {
+  templateRootPaths {
+    12 = EXT:just_news/Resources/Private/Templates
+  }
+  partialRootPaths {
+    12 = EXT:just_news/Resources/Private/Partials
+  }
+  layoutRootPaths {
+    12 = EXT:just_news/Resources/Private/Layouts
+  }
+}
+
+@import 'EXT:just_news/Configuration/TypoScript/RenderingDefinitions/'

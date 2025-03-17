@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="14.10.16T16:14Z" product-name="just_news">
+        <header/>
+        <body>
+            <trans-unit id="news_page_type" xml:space="preserve">
+                <source>News page</source>
+            </trans-unit>
+            <trans-unit id="pages.lastUpdated" xml:space="preserve">
+                <source>News datetime</source>
+            </trans-unit>
+            <trans-unit id="CType.news_list" xml:space="preserve">
+                <source>News listing</source>
+            </trans-unit>
+            <trans-unit id="CType.NewsList.flexform_pi" xml:space="preserve">
+                <source>News Options</source>
+            </trans-unit>
+            <trans-unit id="wizard.title" xml:space="preserve">
+                <source>News listing (just_news)</source>
+            </trans-unit>
+            <trans-unit id="wizard.description" xml:space="preserve">
+                <source>News list with possibility to filter for sysfolder and/or categories</source>
+            </trans-unit>
+            <trans-unit id="constants.maxItems" xml:space="preserve">
+                <source>Maximum items in list (zero = all)</source>
+            </trans-unit>
+            <trans-unit id="flexform.recursive.inherit" xml:space="preserve">
+                <source>Defined in TypoScript</source>
+            </trans-unit>
+            <trans-unit id="flexform.maxItems" xml:space="preserve">
+                <source>Maximum items to display (0 = all)</source>
+            </trans-unit>
+            <trans-unit id="flexform.categoryRestriction" xml:space="preserve">
+                <source>Restrict to categories (OR)</source>
+            </trans-unit>
+            <trans-unit id="div.news" xml:space="preserve">
+                <source>Just News Settings</source>
+            </trans-unit>
+            <trans-unit id="wizard.title" xml:space="preserve">
+                <source>Just News Listing</source>
+            </trans-unit>
+            <trans-unit id="wizard.description" xml:space="preserve">
+                <source>List news articles with the possibility to filter by categories and page tree</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

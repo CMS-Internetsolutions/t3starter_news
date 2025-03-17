@@ -1,0 +1,55 @@
+{
+  "name": "spooner-web/just_news",
+  "type": "typo3-cms-extension",
+  "description": "Easy, flexible and lightweight news extension. No extra tables needed, using pages for news articles.",
+  "homepage": "https://git.spooner.io/spooner/just_news",
+  "license": "GPL-2.0+",
+  "support": {
+    "issues": "https://git.spooner.io/spooner/just_news/issues",
+    "source": "https://git.spooner.io/spooner/just_news"
+  },
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "news",
+    "easy",
+    "lightweight"
+  ],
+  "authors": [
+    {
+      "name": "Thomas Löffler",
+      "email": "loeffler@spooner-web.de",
+      "homepage": "https://spooner-web.de",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "typo3/minimal": "^13.4",
+    "typo3/cms-core": "^13.4",
+    "typo3/cms-fluid-styled-content": "^13.4"
+  },
+  "require-dev": {
+    "typo3/cms-filelist": "^13.4",
+    "typo3/cms-install": "^13.4",
+    "typo3/cms-tstemplate": "^13.4",
+    "typo3/cms-lowlevel": "^13.4"
+  },
+  "suggest": {
+    "spooner-web/paginated-processor": "Adds pagination for list view"
+  },
+  "config": {
+    "vendor-dir": ".Build/vendor/",
+    "bin-dir": ".Build/bin/",
+    "allow-plugins": {
+      "typo3/cms-composer-installers": true,
+      "typo3/class-alias-loader": true
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": ".Build/Web",
+      "extension-key": "just_news"
+    }
+  }
+}
