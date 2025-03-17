@@ -1,12 +1,12 @@
 lib.contentElement {
   templateRootPaths {
-    10 = EXT:t3starter_news/Resources/Private/Templates
+    14 = EXT:t3starter_news/Resources/Private/Templates
   }
   partialRootPaths {
-    10 = EXT:t3starter_news/Resources/Private/Partials
+    14 = EXT:t3starter_news/Resources/Private/Partials
   }
   layoutRootPaths {
-    10 = EXT:t3starter_news/Resources/Private/Layouts
+    14 = EXT:t3starter_news/Resources/Private/Layouts
   }
 }
 
