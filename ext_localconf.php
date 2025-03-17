@@ -9,29 +9,25 @@ use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 defined('TYPO3_MODE') || defined('TYPO3') || die('Access denied.');
 
 $newsDokType = 12;
-// Allow backend users to drag and drop the new page type:
-//ExtensionManagementUtility::addUserTSConfig(
-//    'options.pageTree.doktypesToShowInNewPageDragArea := addToList(' . $newsDokType . ')'
-//);
 
 // Adds page TypoScript for the news list content element
 ExtensionManagementUtility::addPageTSConfig(
-    '@import \'EXT:just_news/Configuration/TsConfig/Page/NewsList.tsconfig\''
+    '@import \'EXT:t3starter_news/Configuration/TsConfig/Page/News.tsconfig\''
 );
 
 // Provide icon for page tree, list view, ... :
 GeneralUtility::makeInstance(IconRegistry::class)
     ->registerIcon(
-        'apps-pagetree-justnews',
+        'apps-pagetree-t3starter-news',
         SvgIconProvider::class,
         [
-            'source' => 'EXT:just_news/Resources/Public/Icons/NewsArticle.svg',
+            'source' => 'EXT:t3starter_news/Resources/Public/Icons/NewsArticle.svg',
         ]
     );
 ExtensionUtility::configurePlugin(
-    'just_news',
+    't3starter_news',
     'NewsList',
     [
-        'JustNews' => 'list'
+        'T3starterNews' => 'list'
     ]
 );

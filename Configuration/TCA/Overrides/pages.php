@@ -3,7 +3,7 @@
 use TYPO3\CMS\Core\Utility\ArrayUtility;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
-$languageFilePrefix = 'LLL:EXT:just_news/Resources/Private/Language/locallang_be.xlf:';
+$languageFilePrefix = 'LLL:EXT:t3starter_news/Resources/Private/Language/locallang_be.xlf:';
 $newsDokType = 12;
 $table = 'pages';
 
@@ -14,7 +14,7 @@ $GLOBALS['TCA']['pages']['palettes']['title_news'] = $GLOBALS['TCA']['pages']['p
 ExtensionManagementUtility::addFieldsToPalette(
     'pages',
     'title_news',
-    'lastUpdated;LLL:EXT:just_news/Resources/Private/Language/locallang_be.xlf:pages.lastUpdated',
+    'lastUpdated;LLL:EXT:t3starter_news/Resources/Private/Language/locallang_be.xlf:pages.lastUpdated',
     'after:title'
 );
 
@@ -46,7 +46,7 @@ $GLOBALS['TCA']['pages']['types'][$newsDokType]['showitem'] = str_replace(
 
 // Register the pageTsCconfig for restricting Page generation to only News Pages
 ExtensionManagementUtility::registerPageTSConfigFile(
-    'just_news',
+    't3starter_news',
     'Configuration/TsConfig/Page/News.tsconfig',
     'Restrict to news pages'
 );
@@ -70,7 +70,7 @@ ArrayUtility::mergeRecursiveWithOverrule(
     [
         'ctrl' => [
             'typeicon_classes' => [
-                $newsDokType => 'apps-pagetree-justnews',
+                $newsDokType => 'apps-pagetree-t3starter-news',
             ],
         ],
     ]

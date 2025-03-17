@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="14.10.16T16:14Z" product-name="just_news">
+    <file source-language="en" datatype="plaintext" original="messages" date="14.10.16T16:14Z" product-name="t3starter_news">
         <header/>
         <body>
             <trans-unit id="news_page_type" xml:space="preserve">
@@ -16,7 +16,7 @@
                 <source>News Options</source>
             </trans-unit>
             <trans-unit id="wizard.title" xml:space="preserve">
-                <source>News listing (just_news)</source>
+                <source>News listing (t3starter_news)</source>
             </trans-unit>
             <trans-unit id="wizard.description" xml:space="preserve">
                 <source>News list with possibility to filter for sysfolder and/or categories</source>
@@ -34,10 +34,10 @@
                 <source>Restrict to categories (OR)</source>
             </trans-unit>
             <trans-unit id="div.news" xml:space="preserve">
-                <source>Just News Settings</source>
+                <source>T3Starter News Settings</source>
             </trans-unit>
             <trans-unit id="wizard.title" xml:space="preserve">
-                <source>Just News Listing</source>
+                <source>T3Starter News Listing</source>
             </trans-unit>
             <trans-unit id="wizard.description" xml:space="preserve">
                 <source>List news articles with the possibility to filter by categories and page tree</source>

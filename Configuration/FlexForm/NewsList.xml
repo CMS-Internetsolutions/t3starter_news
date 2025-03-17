@@ -66,7 +66,7 @@
                     </settings.recursive>
 
                     <settings.maxItems>
-                        <label>LLL:EXT:just_news/Resources/Private/Language/locallang_be.xlf:flexform.maxItems</label>
+                        <label>LLL:EXT:t3starter_news/Resources/Private/Language/locallang_be.xlf:flexform.maxItems</label>
                         <config>
                             <type>input</type>
                             <eval>trim,int</eval>
@@ -74,7 +74,7 @@
                     </settings.maxItems>
 
                     <settings.categoryRestriction>
-                        <label>LLL:EXT:just_news/Resources/Private/Language/locallang_be.xlf:flexform.categoryRestriction</label>
+                        <label>LLL:EXT:t3starter_news/Resources/Private/Language/locallang_be.xlf:flexform.categoryRestriction</label>
                         <config>
                             <type>group</type>
                             <internal_type>db</internal_type>

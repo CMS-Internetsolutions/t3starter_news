@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="de" datatype="plaintext" original="messages" date="16.02.17T17:38Z" product-name="just_news">
+    <file source-language="de" datatype="plaintext" original="messages" date="16.02.17T17:38Z" product-name="t3starter_news">
         <header/>
         <body>
             <trans-unit id="read_more" xml:space="preserve">

@@ -3,7 +3,7 @@
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 $frontendLanguageFilePrefix = 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:';
-$languageFilePrefix = 'LLL:EXT:just_news/Resources/Private/Language/locallang_be.xlf:';
+$languageFilePrefix = 'LLL:EXT:t3starter_news/Resources/Private/Language/locallang_be.xlf:';
 $coreTabsLanguageFilePrefix = 'LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:';
 
 ExtensionManagementUtility::addTcaSelectItem(
@@ -12,7 +12,7 @@ ExtensionManagementUtility::addTcaSelectItem(
     [
         $languageFilePrefix . 'CType.news_list',
         'NewsList',
-        'apps-pagetree-justnews'
+        'apps-pagetree-t3starter-news'
     ],
     'uploads',
     'after'
@@ -33,12 +33,12 @@ $GLOBALS['TCA']['tt_content']['types']['NewsList'] = [
     --div--;' . $coreTabsLanguageFilePrefix . 'categories,categories'
 ];
 
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['NewsList'] = 'apps-pagetree-justnews';
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['NewsList'] = 'apps-pagetree-t3starter-news';
 
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist']['NewsList'] = 'recursive,select_key,pages';
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['NewsList'] = 'pi_flexform';
 ExtensionManagementUtility::addPiFlexFormValue(
     '',
-    'FILE:EXT:just_news/Configuration/FlexForm/NewsList.xml',
+    'FILE:EXT:t3starter_news/Configuration/FlexForm/NewsList.xml',
     'NewsList'
 );

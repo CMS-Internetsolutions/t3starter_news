@@ -71,7 +71,7 @@ tt_content.NewsList.dataProcessing.10 {
     itemsPerPage = 5
     insertAbove = 1
     insertBelow = 0
-    parameterIndex = tx_justnews
+    parameterIndex = tx_t3starternews
   }
 }
 */

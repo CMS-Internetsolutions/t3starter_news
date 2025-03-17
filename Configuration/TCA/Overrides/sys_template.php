@@ -3,7 +3,7 @@
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 ExtensionManagementUtility::addStaticFile(
-    'just_news',
+    't3starter_news',
     'Configuration/TypoScript/',
-    'News with TypoScript'
+    'News for T3STARTER Templates'
 );

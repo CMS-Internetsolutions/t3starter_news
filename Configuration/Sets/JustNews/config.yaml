@@ -1,4 +1,4 @@
-name: spooner-web/just-news
-label: Just News
+name: t3starter/t3starter-news
+label: T3Starter News
 dependencies:
   - typo3/fluid-styled-content

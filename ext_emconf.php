@@ -1,20 +1,17 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'Just News - easy like bicycling',
-    'description' => 'Easy, flexible and lightweight news extension. No extra tables needed, using pages for news articles.',
+    'title' => 'T3Starter News',
+    'description' => 'News extension for T3STARTER Templates.',
     'category' => 'fe',
-    'version' => '4.0.0',
+    'version' => '1.0.0',
     'state' => 'stable',
-    'author' => 'Thomas Löffler',
+    'author' => 'www.t3starter.de',
     'constraints' => [
         'depends' => [
             'typo3' => '13.4.0-13.4.99',
             'fluid_styled_content' => ''
         ],
         'conflicts' => [],
-        'suggests' => [
-            'paginated_processor'
-        ]
     ]
 ];

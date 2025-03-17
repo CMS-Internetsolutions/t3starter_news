@@ -1,10 +1,10 @@
 mod.wizards.newContentElement.wizardItems.justnews {
-  header = Just News
+  header = T3Starter News
   elements {
     NewsList {
-      iconIdentifier = apps-pagetree-justnews
-      title = LLL:EXT:just_news/Resources/Private/Language/locallang_be.xlf:wizard.title
-      description = LLL:EXT:just_news/Resources/Private/Language/locallang_be.xlf:wizard.description
+      iconIdentifier = apps-pagetree-t3starter-news
+      title = LLL:EXT:t3starter_news/Resources/Private/Language/locallang_be.xlf:wizard.title
+      description = LLL:EXT:t3starter_news/Resources/Private/Language/locallang_be.xlf:wizard.description
       tt_content_defValues {
         CType = NewsList
       }

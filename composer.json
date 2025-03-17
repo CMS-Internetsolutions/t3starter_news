@@ -1,55 +1,26 @@
 {
-  "name": "spooner-web/just_news",
+  "name": "t3starter/t3starter-news",
   "type": "typo3-cms-extension",
-  "description": "Easy, flexible and lightweight news extension. No extra tables needed, using pages for news articles.",
-  "homepage": "https://git.spooner.io/spooner/just_news",
+  "description": "News extension for T3STARTER Templates.",
+  "homepage": "https://www.t3starter.de",
   "license": "GPL-2.0+",
-  "support": {
-    "issues": "https://git.spooner.io/spooner/just_news/issues",
-    "source": "https://git.spooner.io/spooner/just_news"
-  },
   "keywords": [
     "TYPO3",
-    "extension",
-    "news",
-    "easy",
-    "lightweight"
-  ],
-  "authors": [
-    {
-      "name": "Thomas Löffler",
-      "email": "loeffler@spooner-web.de",
-      "homepage": "https://spooner-web.de",
-      "role": "Developer"
-    }
+    "extension"
   ],
   "require": {
-    "typo3/minimal": "^13.4",
-    "typo3/cms-core": "^13.4",
-    "typo3/cms-fluid-styled-content": "^13.4"
+      "typo3/cms-core": "^12.4 || ^13.0",
+      "typo3/cms-rte-ckeditor": "^12.4 || ^13.0",
+      "typo3/cms-fluid-styled-content": "^12.4 || ^13.0"
   },
-  "require-dev": {
-    "typo3/cms-filelist": "^13.4",
-    "typo3/cms-install": "^13.4",
-    "typo3/cms-tstemplate": "^13.4",
-    "typo3/cms-lowlevel": "^13.4"
-  },
-  "suggest": {
-    "spooner-web/paginated-processor": "Adds pagination for list view"
-  },
-  "config": {
-    "vendor-dir": ".Build/vendor/",
-    "bin-dir": ".Build/bin/",
-    "allow-plugins": {
-      "typo3/cms-composer-installers": true,
-      "typo3/class-alias-loader": true
+    "autoload": {
+        "psr-4": {
+            "T3starter\\SiteMastertheme\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "t3starter_news"
+        }
     }
-  },
-  "extra": {
-    "typo3/cms": {
-      "cms-package-dir": "{$vendor-dir}/typo3/cms",
-      "web-dir": ".Build/Web",
-      "extension-key": "just_news"
-    }
-  }
 }

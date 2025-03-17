@@ -1,11 +1,11 @@
 categories:
-  JustNews.Default:
-    label: LLL:EXT:just_news/Resources/Private/Language/locallang_be.xlf:CType.news_list
+  T3starterNews.Default:
+    label: LLL:EXT:t3starter_news/Resources/Private/Language/locallang_be.xlf:CType.news_list
 
 settings:
-  plugin.tx_justnews.maxItems:
+  plugin.tx_t3starternews.maxItems:
     label: 'Max Items'
-    category: JustNews.Default
-    description: LLL:EXT:just_news/Resources/Private/Language/locallang_be.xlf:constants.maxItems
+    category: T3starterNews.Default
+    description: LLL:EXT:t3starter_news/Resources/Private/Language/locallang_be.xlf:constants.maxItems
     type: int
     default: 0
