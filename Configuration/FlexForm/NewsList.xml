@@ -14,7 +14,7 @@
                             <allowed>pages</allowed>
                             <size>3</size>
                             <maxitems>50</maxitems>
-                            <minitems>0</minitems>
+                            <minitems>1</minitems>
                         </config>
                     </settings.startingpoint>
 
