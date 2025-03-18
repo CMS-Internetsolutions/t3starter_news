@@ -56,8 +56,8 @@ tt_content {
     settings {
       list {
         ## https://www.php.net/manual/de/datetime.format.php
-        #dateFormat = d.m.Y
-        dateFormat = j m Y
+        dateFormat = d.m.Y
+        #dateFormat = j m Y
       }
     }
   }

@@ -11,3 +11,17 @@ TCEFORM.tt_content.layout.types.NewsList {
 # Remove only over CSS
 TCEFORM.tt_content.space_before_class.types.NewsList.disabled = 1
 TCEFORM.tt_content.space_after_class.types.NewsList.disabled = 1
+
+# Remove Metadata for all pages not news and keywords for doktype 119
+[traverse(page, "doktype") != "119"]
+    TCEFORM.pages.keywords.disabled = 1
+    TCEFORM.pages.abstract.disabled = 1
+    TCEFORM.pages.author.disabled = 1
+    TCEFORM.pages.author_email.disabled = 1
+    TCEFORM.pages.lastUpdated.disabled = 1
+[END]
+[traverse(page, "doktype") == "119"]
+    TCEFORM.pages.keywords.disabled = 1
+    TCEFORM.pages.abstract.label = LLL:EXT:t3starter_news/Resources/Private/Language/locallang_be.xlf:title.abstract
+[END]
+

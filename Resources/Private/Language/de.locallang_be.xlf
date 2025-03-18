@@ -1,55 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" target-language="de" original="" datatype="plaintext" date="2025-03-18T16:11:22+01:00">
-        <body>
-            <trans-unit id="news_page_type" resname="news_page_type">
-                <source>News page</source>
-                <target>News Seite</target>
-            </trans-unit>
-            <trans-unit id="pages.lastUpdated" resname="pages.lastUpdated">
-                <source>News datetime</source>
-                <target>News Datum / Zeit</target>
-            </trans-unit>
-            <trans-unit id="CType.news_list" resname="CType.news_list">
-                <source>News listing</source>
-                <target>News Listing</target>
-            </trans-unit>
-            <trans-unit id="CType.NewsList.flexform_pi" resname="CType.NewsList.flexform_pi">
-                <source>News Options</source>
-                <target>News Einstellungen</target>
-            </trans-unit>
-            <trans-unit id="wizard.title" resname="wizard.title">
-                <source>News Listing</source>
-                <target>News Listing</target>
-            </trans-unit>
-            <trans-unit id="wizard.description" resname="wizard.description">
-                <source>List news articles with the possibility to filter by categories and page tree</source>
-                <target>Liste der Newsartikel mit der Möglichkeit, nach Kategorien und Seitenbaum zu filtern.</target>
-            </trans-unit>
-            <trans-unit id="constants.maxItems" resname="constants.maxItems">
-                <source>Maximum items in list (zero = all)</source>
-                <target>Maximale Einträge in der Liste (Null = alle)</target>
-            </trans-unit>
-            <trans-unit id="flexform.startingpoint.description" resname="flexform.startingpoint.description">
-                <source>This is a mandatory field, enter the folder in which the news pages are located. Folders above this can also be specified. The search range can be defined via the levels. </source>
-                <target>Dies ist ein Pflichtfeld, geben Sie den Ordner an in dem die News Seiten liegen. Es können auch darüber liegende Ordner angegeben werden. Die Suchreichweite kann über die Ebenen definiert werden. </target>
-            </trans-unit>
-            <trans-unit id="flexform.recursive.inherit" resname="flexform.recursive.inherit">
-                <source>Defined in TypoScript</source>
-                <target>In Typoscript definiert</target>
-            </trans-unit>
-            <trans-unit id="flexform.maxItems" resname="flexform.maxItems">
-                <source>Maximum items to display (0 = all)</source>
-                <target>Maximale Einträge die angezeigt werden (Null = alle)</target>
-            </trans-unit>
-            <trans-unit id="flexform.categoryRestriction" resname="flexform.categoryRestriction">
-                <source>Restrict to categories (OR)</source>
-                <target>Auf Kategorie beschränken</target>
-            </trans-unit>
-            <trans-unit id="div.news" resname="div.news">
-                <source>News Settings</source>
-                <target>News Settings</target>
-            </trans-unit>
-        </body>
-    </file>
+	<file source-language="en" target-language="de" original="" datatype="plaintext" date="2025-03-19T00:38:46+01:00">
+		<body>
+			<trans-unit id="news_page_type" resname="news_page_type">
+				<source>News page</source>
+				<target>News Seite</target>
+			</trans-unit>
+			<trans-unit id="pages.lastUpdated" resname="pages.lastUpdated">
+				<source>News datetime</source>
+				<target>News Datum / Zeit</target>
+			</trans-unit>
+			<trans-unit id="CType.news_list" resname="CType.news_list">
+				<source>News listing</source>
+				<target>News Listing</target>
+			</trans-unit>
+			<trans-unit id="CType.NewsList.flexform_pi" resname="CType.NewsList.flexform_pi">
+				<source>News Options</source>
+				<target>News Einstellungen</target>
+			</trans-unit>
+			<trans-unit id="wizard.title" resname="wizard.title">
+				<source>News Listing</source>
+				<target>News Listing</target>
+			</trans-unit>
+			<trans-unit id="wizard.description" resname="wizard.description">
+				<source>List news articles with the possibility to filter by categories and page tree</source>
+				<target>Liste der Newsartikel mit der Möglichkeit, nach Kategorien und Seitenbaum zu filtern.</target>
+			</trans-unit>
+			<trans-unit id="constants.maxItems" resname="constants.maxItems">
+				<source>Maximum items in list (zero = all)</source>
+				<target>Maximale Einträge in der Liste (Null = alle)</target>
+			</trans-unit>
+			<trans-unit id="flexform.startingpoint.description" resname="flexform.startingpoint.description">
+				<source>This is a mandatory field, enter the folder in which the news pages are located. Folders above this can also be specified. The search range can be defined via the levels. </source>
+				<target>Dies ist ein Pflichtfeld, geben Sie den Ordner an in dem die News Seiten liegen. Es können auch darüber liegende Ordner angegeben werden. Die Suchreichweite kann über die Ebenen definiert werden. </target>
+			</trans-unit>
+			<trans-unit id="flexform.recursive.inherit" resname="flexform.recursive.inherit">
+				<source>Defined in TypoScript</source>
+				<target>In Typoscript definiert</target>
+			</trans-unit>
+			<trans-unit id="flexform.maxItems" resname="flexform.maxItems">
+				<source>Maximum items to display (0 = all)</source>
+				<target>Maximale Einträge die angezeigt werden (Null = alle)</target>
+			</trans-unit>
+			<trans-unit id="flexform.categoryRestriction" resname="flexform.categoryRestriction">
+				<source>Restrict to categories (OR)</source>
+				<target>Auf Kategorie beschränken</target>
+			</trans-unit>
+			<trans-unit id="div.news" resname="div.news">
+				<source>News Settings</source>
+				<target>News Settings</target>
+			</trans-unit>
+			<trans-unit id="title.abstract" resname="title.abstract">
+				<source>This text is displayed as teaser text in the news list.</source>
+				<target>Dieser Text wird in der News List als Teasertext ausgegeben.</target>
+			</trans-unit>
+		</body>
+	</file>
 </xliff>

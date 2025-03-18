@@ -44,12 +44,6 @@ $GLOBALS['TCA']['pages']['types'][$newsDokType]['showitem'] = str_replace(
     $GLOBALS['TCA']['pages']['types'][$newsDokType]['showitem']
 );
 
-// Register the pageTsCconfig for restricting Page generation to only News Pages
-//ExtensionManagementUtility::registerPageTSConfigFile(
-//    't3starter_news',
-//    'Configuration/TsConfig/Page/News.tsconfig',
-//    'Restrict to news pages'
-//);
 
 // Add new page type as possible select item:
 ExtensionManagementUtility::addTcaSelectItem(

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" original="messages" datatype="plaintext" product-name="t3starter_news" date="2025-03-18T16:11:22+01:00">
+    <file source-language="en" original="messages" datatype="plaintext" product-name="t3starter_news" date="2025-03-19T00:38:46+01:00">
         <header></header>
         <body>
             <trans-unit id="news_page_type" resname="news_page_type">
@@ -38,6 +38,9 @@
             </trans-unit>
             <trans-unit id="div.news" resname="div.news">
                 <source>News Settings</source>
+            </trans-unit>
+            <trans-unit id="title.abstract" resname="title.abstract">
+                <source>This text is displayed as teaser text in the news list.</source>
             </trans-unit>
         </body>
     </file>
