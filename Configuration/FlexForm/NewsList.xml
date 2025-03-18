@@ -8,6 +8,7 @@
                     <!-- startingpoint -->
                     <settings.startingpoint>
                         <label>LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.startingpoint</label>
+                        <description>LLL:EXT:t3starter_news/Resources/Private/Language/locallang_be.xlf:flexform.startingpoint.description</description>
                         <config>
                             <type>group</type>
                             <internal_type>db</internal_type>

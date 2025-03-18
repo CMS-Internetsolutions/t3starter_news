@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" original="messages" datatype="plaintext" product-name="t3starter_news" date="2025-03-17T20:51:24+01:00">
+    <file source-language="en" original="messages" datatype="plaintext" product-name="t3starter_news" date="2025-03-18T16:11:22+01:00">
         <header></header>
         <body>
             <trans-unit id="news_page_type" resname="news_page_type">
@@ -23,6 +23,9 @@
             </trans-unit>
             <trans-unit id="constants.maxItems" resname="constants.maxItems">
                 <source>Maximum items in list (zero = all)</source>
+            </trans-unit>
+            <trans-unit id="flexform.startingpoint.description" resname="flexform.startingpoint.description">
+                <source>This is a mandatory field, enter the folder in which the news pages are located. Folders above this can also be specified. The search range can be defined via the levels. </source>
             </trans-unit>
             <trans-unit id="flexform.recursive.inherit" resname="flexform.recursive.inherit">
                 <source>Defined in TypoScript</source>
