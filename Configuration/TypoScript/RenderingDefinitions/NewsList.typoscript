@@ -63,17 +63,3 @@ tt_content {
   }
 }
 
-# Pagination if EXT:paginated_processor is installed
-
-/*
-tt_content.NewsList.dataProcessing.10 = SpoonerWeb\PaginatedProcessor\DataProcessing\PaginatedDatabaseQueryProcessor
-tt_content.NewsList.dataProcessing.10 {
-  paginate {
-    activate = 1
-    itemsPerPage = 5
-    insertAbove = 1
-    insertBelow = 0
-    parameterIndex = tx_t3starternews
-  }
-}
-*/
