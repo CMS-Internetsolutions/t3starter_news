@@ -1,11 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<xliff version="1.0">
-    <file source-language="de" datatype="plaintext" original="messages" date="16.02.17T17:38Z" product-name="t3starter_news">
-        <header/>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="de" original="messages" datatype="plaintext" product-name="t3starter_news" date="2025-03-18T20:40:23+01:00">
+        <header></header>
         <body>
-            <trans-unit id="read_more" xml:space="preserve">
+            <trans-unit id="link.read_more" resname="link.read_more">
                 <source>Read more</source>
                 <target>Mehr lesen</target>
+            </trans-unit>
+            <trans-unit id="error.no_news" resname="error.no_news">
+                <source>No news pages found.</source>
+                <target>Keine News Seiten gefunden.</target>
             </trans-unit>
         </body>
     </file>
