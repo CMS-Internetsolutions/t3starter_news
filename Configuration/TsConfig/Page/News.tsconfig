@@ -1,6 +1,13 @@
-## uncomment in ext_localconf.php and pages.php
-#TCEFORM.pages {
-#  doktype {
-    #keepItems = 119
-#  }
-#}
+TCEFORM.tt_content.layout.types.NewsList {
+    # Add another option:
+
+    ## LLL:EXT:my_ext/Resources/Private/Language/locallang.xlf:list_layout
+    ## 1734035000
+    addItems.1734035000 = Standard Bootstrap 5
+    #addItems.1734035000.icon = EXT:site_mastertheme/Resources/Public/Icons/Extension.svg
+    addItems.1734035000.group = List View
+}
+
+# Remove only over CSS
+TCEFORM.tt_content.space_before_class.types.NewsList.disabled = 1
+TCEFORM.tt_content.space_after_class.types.NewsList.disabled = 1
