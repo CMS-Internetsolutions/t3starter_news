@@ -1,4 +1,4 @@
-mod.wizards.newContentElement.wizardItems.justnews {
+mod.wizards.newContentElement.wizardItems.t3starternews {
   header = T3Starter News
   elements {
     NewsList {

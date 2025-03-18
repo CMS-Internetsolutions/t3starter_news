@@ -5,6 +5,7 @@ use TYPO3\CMS\Core\Imaging\IconRegistry;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
+use TYPO3\CMS\Core\Information\Typo3Version;
 
 defined('TYPO3_MODE') || defined('TYPO3') || die('Access denied.');
 
@@ -14,6 +15,19 @@ $newsDokType = 119;
 //ExtensionManagementUtility::addPageTSConfig(
 //    '@import \'EXT:t3starter_news/Configuration/TsConfig/Page/News.tsconfig\''
 //);
+
+(function () {
+
+    $versionInformation = GeneralUtility::makeInstance(Typo3Version::class);
+    // Only include user.tsconfig if TYPO3 version is below 13 so that it is not imported twice.
+    if ($versionInformation->getMajorVersion() < 13) {
+        ExtensionManagementUtility::addUserTSConfig(
+            '@import "EXT:t3starter_news/Configuration/page.tsconfig"'
+        );
+    }
+
+})();
+
 
 // Provide icon for page tree, list view, ... :
 GeneralUtility::makeInstance(IconRegistry::class)

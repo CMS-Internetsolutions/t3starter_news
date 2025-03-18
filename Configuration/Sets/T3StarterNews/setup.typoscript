@@ -1,3 +1,6 @@
+## Root/Partial/Layout Path
+## SEE ALSO Configuration/Sets/T3StarterNews/setup.typoscript
+## TYPO3 13 compatible in this path for site configuration
 lib.contentElement {
   templateRootPaths {
     14 = EXT:t3starter_news/Resources/Private/Templates
@@ -10,4 +13,5 @@ lib.contentElement {
   }
 }
 
+# Rendering Frontend
 @import 'EXT:t3starter_news/Configuration/TypoScript/RenderingDefinitions/'

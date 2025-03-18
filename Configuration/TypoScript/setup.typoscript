@@ -1,0 +1,17 @@
+## Root/Partial/Layout Path
+## SEE ALSO Configuration/TypoScript/setup.typoscript
+## TYPO3 12 compatible in this path
+lib.contentElement {
+  templateRootPaths {
+    14 = EXT:t3starter_news/Resources/Private/Templates
+  }
+  partialRootPaths {
+    14 = EXT:t3starter_news/Resources/Private/Partials
+  }
+  layoutRootPaths {
+    14 = EXT:t3starter_news/Resources/Private/Layouts
+  }
+}
+
+# Rendering Frontend
+@import 'EXT:t3starter_news/Configuration/TypoScript/RenderingDefinitions/'
