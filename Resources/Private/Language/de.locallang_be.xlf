@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file source-language="en" target-language="de" original="" datatype="plaintext" date="2025-03-19T00:38:46+01:00">
+	<file source-language="en" target-language="de" original="" datatype="plaintext" date="2025-03-19T14:16:40+01:00">
 		<body>
 			<trans-unit id="news_page_type" resname="news_page_type">
 				<source>News page</source>
@@ -51,8 +51,16 @@
 				<target>News Settings</target>
 			</trans-unit>
 			<trans-unit id="title.abstract" resname="title.abstract">
+				<source>Teasertext / Newslist</source>
+				<target>Teasertext / Newslist</target>
+			</trans-unit>
+			<trans-unit id="description.abstract" resname="description.abstract">
 				<source>This text is displayed as teaser text in the news list.</source>
 				<target>Dieser Text wird in der News List als Teasertext ausgegeben.</target>
+			</trans-unit>
+			<trans-unit id="ttcontent.addItems.1734035000" resname="ttcontent.addItems.1734035000">
+				<source>List View with Image</source>
+				<target>Listen Ansicht mit Bild</target>
 			</trans-unit>
 		</body>
 	</file>

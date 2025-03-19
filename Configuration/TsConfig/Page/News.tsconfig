@@ -3,31 +3,20 @@ TCEFORM.tt_content.layout.types.NewsList {
 
     ## LLL:EXT:my_ext/Resources/Private/Language/locallang.xlf:list_layout
     ## 1734035000
-    addItems.1734035000 = Standard Bootstrap 5
-    #addItems.1734035000.icon = EXT:site_mastertheme/Resources/Public/Icons/Extension.svg
-    addItems.1734035000.group = List View
+    addItems.1734035000 = LLL:EXT:t3starter_news/Resources/Private/Language/locallang_be.xlf:ttcontent.addItems.1734035000
+    addItems.1734035000.icon = EXT:t3starter_news/Resources/Public/Icons/Extension.svg
+    ### LLL bug not possible? for group
+    addItems.1734035000.group = News List
 }
 
-# Remove only over CSS
+# Remove space only over CSS
 TCEFORM.tt_content.space_before_class.types.NewsList.disabled = 1
 TCEFORM.tt_content.space_after_class.types.NewsList.disabled = 1
 
 # Remove Metadata for all pages not news and keywords for doktype 119
-[traverse(page, "doktype") != "119"]
-    TCEFORM.pages.keywords.disabled = 1
-    TCEFORM.pages.abstract.disabled = 1
-    TCEFORM.pages.author.disabled = 1
-    TCEFORM.pages.author_email.disabled = 1
-    TCEFORM.pages.lastUpdated.disabled = 1
-[END]
 [traverse(page, "doktype") == "119"]
     TCEFORM.pages.keywords.disabled = 1
     TCEFORM.pages.abstract.label = LLL:EXT:t3starter_news/Resources/Private/Language/locallang_be.xlf:title.abstract
+    TCEFORM.pages.abstract.description = LLL:EXT:t3starter_news/Resources/Private/Language/locallang_be.xlf:description.abstract
 [END]
-# show for blog extension Blog Post doktype 137
-[traverse(page, "doktype") != "137"]
-    TCEFORM.pages.abstract.disabled =  0
-    TCEFORM.pages.author.disabled = 0
-    TCEFORM.pages.author_email.disabled = 0
-    TCEFORM.pages.lastUpdated.disabled = 0
-[END]
+

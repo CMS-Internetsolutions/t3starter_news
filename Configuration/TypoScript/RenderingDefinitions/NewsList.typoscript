@@ -7,7 +7,9 @@ tt_content {
       10 {
         table = pages
         pidInList.data = flexform:pi_flexform:settings.startingpoint
-        recursive.data = flexform:pi_flexform:settings.recursive
+          # @todo testen remove 1 in minitems flexform
+          # pidInList.stdWrap.ifEmpty = 0
+          recursive.data = flexform:pi_flexform:settings.recursive
         selectFields = pages.*
         max.data = flexform:pi_flexform:settings.maxItems
         join = sys_category_record_mm ON sys_category_record_mm.uid_foreign = pages.uid
