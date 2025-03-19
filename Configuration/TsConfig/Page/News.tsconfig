@@ -24,4 +24,10 @@ TCEFORM.tt_content.space_after_class.types.NewsList.disabled = 1
     TCEFORM.pages.keywords.disabled = 1
     TCEFORM.pages.abstract.label = LLL:EXT:t3starter_news/Resources/Private/Language/locallang_be.xlf:title.abstract
 [END]
-
+# show for blog extension Blog Post doktype 137
+[traverse(page, "doktype") != "137"]
+    TCEFORM.pages.abstract.disabled =  0
+    TCEFORM.pages.author.disabled = 0
+    TCEFORM.pages.author_email.disabled = 0
+    TCEFORM.pages.lastUpdated.disabled = 0
+[END]
