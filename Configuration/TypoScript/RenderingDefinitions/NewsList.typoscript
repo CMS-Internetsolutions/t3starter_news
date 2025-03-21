@@ -7,8 +7,8 @@ tt_content {
       10 {
         table = pages
         pidInList.data = flexform:pi_flexform:settings.startingpoint
-          # @todo testen remove 1 in minitems flexform
-          # pidInList.stdWrap.ifEmpty = 0
+          #search from 0 (minitem for better ui 1)
+          pidInList.stdWrap.ifEmpty = 0
           recursive.data = flexform:pi_flexform:settings.recursive
         selectFields = pages.*
         max.data = flexform:pi_flexform:settings.maxItems
