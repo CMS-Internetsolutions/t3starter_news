@@ -20,6 +20,7 @@ $newsDokType = 119;
 
     $versionInformation = GeneralUtility::makeInstance(Typo3Version::class);
     // Only include user.tsconfig if TYPO3 version is below 13 so that it is not imported twice.
+    // @todo deprecated
     if ($versionInformation->getMajorVersion() < 13) {
         ExtensionManagementUtility::addUserTSConfig(
             '@import "EXT:t3starter_news/Configuration/page.tsconfig"'

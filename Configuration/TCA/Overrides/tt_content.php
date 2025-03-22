@@ -35,6 +35,8 @@ $GLOBALS['TCA']['tt_content']['types']['NewsList'] = [
 
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['NewsList'] = 'apps-pagetree-t3starter-news';
 
+
+// @todo deprecated
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist']['NewsList'] = 'recursive,select_key,pages';
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['NewsList'] = 'pi_flexform';
 ExtensionManagementUtility::addPiFlexFormValue(
