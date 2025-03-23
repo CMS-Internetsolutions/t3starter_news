@@ -1,7 +1,6 @@
 TCEFORM.tt_content.layout.types.NewsList {
     # Add another option:
 
-    ## LLL:EXT:my_ext/Resources/Private/Language/locallang.xlf:list_layout
     ## 1734035000
     addItems.1734035000 = LLL:EXT:t3starter_news/Resources/Private/Language/locallang_be.xlf:ttcontent.addItems.1734035000
     addItems.1734035000.icon = EXT:t3starter_news/Resources/Public/Icons/Extension.svg

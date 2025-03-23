@@ -2,10 +2,10 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'T3Starter News',
-    'description' => 'News extension for T3STARTER Templates.',
+    'description' => 'Very simple news extension.',
     'category' => 'fe',
     'version' => '1.0.0',
-    'state' => 'stable',
+    'state' => 'beta',
     'author' => 'www.t3starter.de',
     'constraints' => [
         'depends' => [

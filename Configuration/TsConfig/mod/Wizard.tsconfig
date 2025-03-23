@@ -10,6 +10,5 @@ mod.wizards.newContentElement.wizardItems.t3starternews {
       }
     }
   }
-
   show := addToList(NewsList)
 }

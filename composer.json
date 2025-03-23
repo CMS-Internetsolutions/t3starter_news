@@ -2,11 +2,14 @@
   "name": "t3starter/t3starter-news",
   "type": "typo3-cms-extension",
   "description": "News extension for T3STARTER Templates.",
-  "homepage": "https://www.t3starter.de",
-  "license": "GPL-2.0+",
+    "license": [
+        "GPL-3.0-or-later"
+    ],
+    "homepage": "https://github.com/CMS-Internetsolutions/t3starter_news",
   "keywords": [
     "TYPO3",
-    "extension"
+    "extension",
+    "News"
   ],
   "require": {
       "typo3/cms-core": "^12.4 || ^13.0",
