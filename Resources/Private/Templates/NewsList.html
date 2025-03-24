@@ -1,14 +1,28 @@
 <html xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers" data-namespace-typo3-fluid="true">
 <div id="c{data.uid}">
-	<!--TYPO3SEARCH_end-->
-	<f:render partial="Header/All" arguments="{_all}" />
-	<f:if condition="{news -> f:count()} > 0">
-		<ol>
-			<f:for each="{news}" as="newsItem">
-				<f:render partial="NewsItem" arguments="{_all}" />
-			</f:for>
-		</ol>
-	</f:if>
-	<!--TYPO3SEARCH_start-->
+
+    <f:render partial="Header/All" arguments="{_all}"/>
+
+    <f:if condition="{news -> f:count()} > 0">
+        <f:then>
+            <f:if condition="{data.layout} == 1734035000">
+                <f:then>
+                    <f:comment><!-- 1734035000 Layout --></f:comment>
+                    <f:render partial="Layouts/1734035000" arguments="{_all}"/>
+                </f:then>
+                <f:else>
+                    <f:comment><!-- STANDARD 0 Layout --></f:comment>
+                    <f:render partial="Layouts/null" arguments="{_all}"/>
+                </f:else>
+            </f:if>
+        </f:then>
+        <f:else>
+            <div class="alert alert-info" role="alert">
+                <f:translate key="LLL:EXT:t3starter_news/Resources/Private/Language/locallang.xlf:error.no_news"/>
+            </div>
+        </f:else>
+
+
+    </f:if>
 </div>
 </html>

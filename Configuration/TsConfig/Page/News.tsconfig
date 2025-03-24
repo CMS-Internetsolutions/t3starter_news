@@ -19,4 +19,4 @@ TCEFORM.tt_content.space_after_class.types.NewsList.disabled = 1
     TCEFORM.pages.abstract.description = LLL:EXT:t3starter_news/Resources/Private/Language/locallang_be.xlf:description.abstract
 [END]
 
-options.pageTree.doktypesToShowInNewPageDragArea := addToList(119)
+

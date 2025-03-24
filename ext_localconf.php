@@ -16,6 +16,14 @@ $newsDokType = 119;
 //    '@import \'EXT:t3starter_news/Configuration/TsConfig/Page/News.tsconfig\''
 //);
 
+
+$newsDokType = 119;
+// Allow backend users to drag and drop the new page type:
+ExtensionManagementUtility::addUserTSConfig(
+    'options.pageTree.doktypesToShowInNewPageDragArea := addToList(' . $newsDokType . ')'
+);
+
+
 (function () {
 
     $versionInformation = GeneralUtility::makeInstance(Typo3Version::class);
