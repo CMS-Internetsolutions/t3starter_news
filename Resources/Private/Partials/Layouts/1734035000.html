@@ -32,9 +32,18 @@
                         dolor pellentesque vel porttitor magna aliquet arcu. Interdum risus mauris pulvinar et vel morbi
                         tellus, scelerisque vel metus ...</p>
                     <div class="d-flex flex-wrap align-items-center mt-n2">
+                        <f:if condition="{newsItem.data.author}">
                         <span class="fs-sm text-body-secondary mt-2">
-                            auto
+                        <f:if condition="{newsItem.data.author_email}">
+                            <f:then>
+                                <f:link.email class="link-primary text-decoration-none fs-sm text-body-secondary mt-2" email="{newsItem.data.author_email}">{newsItem.data.author}</f:link.email>
+                            </f:then>
+                            <f:else>
+                                {newsItem.data.author}
+                            </f:else>
+                        </f:if>
                         </span>
+                        </f:if>
                         <span class="fs-xs opacity-20 mt-2 mx-3">|</span>
 
                         <span class="fs-sm text-body-secondary mt-2">
@@ -64,25 +73,7 @@
                 </f:link.page>
             </h3>
             <p>
-                <small>
-                    <f:if condition="{newsItem.data.author}">
-                        <f:if condition="{newsItem.data.author_email}">
-                            <f:then>
-                                <f:link.email email="{newsItem.data.author_email}">{newsItem.data.author}</f:link.email>
-                            </f:then>
-                            <f:else>
-                                {newsItem.data.author}
-                            </f:else>
-                        </f:if>
-                        <f:if condition="{newsItem.data.keywords}">
-                            |
-                        </f:if>
-                    </f:if>
-                    <f:if condition="{newsItem.data.keywords}">
-                        {newsItem.data.keywords}
-                    </f:if>
-                </small><br>
-                {newsItem.data.abstract -> f:format.nl2br()}<br>
+                {newsItem.data.abstract -> f:format.nl2br()}
                 <f:link.page pageUid="{newsItem.data.uid}">
                     <f:translate key="LLL:EXT:t3starter_news/Resources/Private/Language/locallang.xlf:link.read_more"/>
                 </f:link.page>
