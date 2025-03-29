@@ -1,85 +1,68 @@
 <html xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers" data-namespace-typo3-fluid="true">
 
-<f:comment><!-- Variables start --></f:comment>
-
-<f:comment><!-- Variables end --></f:comment>
-
+<f:comment><!-- List  --></f:comment>
 <f:for each="{news}" as="newsItem">
     <div class="image">
         <article class="row g-0 border-0 mb-4">
             <f:if condition="{newsItem.images -> f:count()} > 0">
                 <f:then>
-                    <a class="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5"
-                       href="blog-single-v1.html"
-                       style="background-image: url({f:uri.image(src: newsItem.images.0.uid, treatIdAsReference: '1')}); min-height: 16rem"
-                       aria-label="Post image"></a>
+                    <f:link.page class="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5" style="background-image: url({f:uri.image(src: newsItem.images.0.uid, treatIdAsReference: '1')}); min-height: 16rem" pageUid="{newsItem.data.uid}"></f:link.page>
                 </f:then>
                 <f:else>
-                    <a class="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5"
-                       href="blog-single-v1.html"
-                       style="background-image: url({f:uri.resource(path: 'EXT:t3starter_news/Resources/Public/Images/no-image-icon.jpg')}); min-height: 16rem"
-                       aria-label="Post image"></a>
+                    <f:link.page class="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5" style="background-image: url({f:uri.resource(path: 'EXT:t3starter_news/Resources/Public/Images/no-image-icon.jpg')}); min-height: 16rem" pageUid="{newsItem.data.uid}"></f:link.page>
                 </f:else>
-
             </f:if>
             <div class="col-sm-7 col-lg-8">
                 <div class="pt-4 pb-sm-4 ps-sm-4 pe-lg-4">
+                    <f:if condition="{newsItem.data.subtitle}">
+                        <div class="d-flex flex-wrap align-items-center mb-2">
+                            <span class="text-primary fs-xs mt-2">{newsItem.data.subtitle}</span>
+                        </div>
+                    </f:if>
                     <h3>
-                        <a href="blog-single-v1.html">Business strategy for a brand of vintage bags</a>
+                        <f:link.page pageUid="{newsItem.data.uid}">
+                            {newsItem.data.title}
+                        </f:link.page>
                     </h3>
-                    <p class="d-sm-none d-md-block">Morbi et massa fames ac scelerisque sit commodo dignissim faucibus
-                        vel quisque proin lectus et massa fames ac scelerisque sit commodo dignissim. Tellus sagittis
-                        dolor pellentesque vel porttitor magna aliquet arcu. Interdum risus mauris pulvinar et vel morbi
-                        tellus, scelerisque vel metus ...</p>
+                    <p class="d-sm-none d-md-block">
+                        <f:if condition="{newsItem.data.abstract}">
+                            {newsItem.data.abstract -> f:format.nl2br()}
+                            <f:link.page class="link-primary text-decoration-none fs-sm text-body-secondary me-2"
+                                         pageUid="{newsItem.data.uid}">
+                                <f:translate
+                                    key="LLL:EXT:t3starter_news/Resources/Private/Language/locallang.xlf:link.read_more"/>
+                            </f:link.page>
+                        </f:if>
+                    </p>
                     <div class="d-flex flex-wrap align-items-center mt-n2">
                         <f:if condition="{newsItem.data.author}">
                         <span class="fs-sm text-body-secondary mt-2">
                         <f:if condition="{newsItem.data.author_email}">
                             <f:then>
-                                <f:link.email class="link-primary text-decoration-none fs-sm text-body-secondary mt-2" email="{newsItem.data.author_email}">{newsItem.data.author}</f:link.email>
+                                <f:link.email class="link-primary text-decoration-none fs-sm text-body-secondary mt-2"
+                                              email="{newsItem.data.author_email}">{newsItem.data.author}</f:link.email>
                             </f:then>
                             <f:else>
                                 {newsItem.data.author}
                             </f:else>
                         </f:if>
                         </span>
+                            <span class="fs-xs opacity-20 mt-2 mx-3">|</span>
                         </f:if>
-                        <span class="fs-xs opacity-20 mt-2 mx-3">|</span>
 
                         <span class="fs-sm text-body-secondary mt-2">
                             {newsItem.data.lastUpdated ->
                     f:format.date(format:'{settings.list.dateFormat}')}
                         </span>
                         <span class="fs-xs opacity-20 mt-2 mx-3">|</span>
-
                         <f:if condition="{newsItem.newsCategories}">
                             <f:for each="{newsItem.newsCategories}" as="category" iteration="iterator">
                                 <span class="badge text-nav fs-xs border mt-2">{category.data.title}</span>
                             </f:for>
                         </f:if>
-
-
                     </div>
                 </div>
             </div>
         </article>
-        <div class="content">
-
-            <h3>
-                <f:link.page pageUid="{newsItem.data.uid}">
-                    {newsItem.data.title} <br>
-                    {newsItem.data.subtitle} <br>
-
-                </f:link.page>
-            </h3>
-            <p>
-                {newsItem.data.abstract -> f:format.nl2br()}
-                <f:link.page pageUid="{newsItem.data.uid}">
-                    <f:translate key="LLL:EXT:t3starter_news/Resources/Private/Language/locallang.xlf:link.read_more"/>
-                </f:link.page>
-            </p>
-        </div>
 </f:for>
-
-
 </html>

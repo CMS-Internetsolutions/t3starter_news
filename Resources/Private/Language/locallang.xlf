@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" original="messages" datatype="plaintext" product-name="t3starter_news" date="2025-03-18T21:43:33+01:00">
+    <file source-language="en" original="messages" datatype="plaintext" product-name="t3starter_news" date="2025-03-29T22:50:15+01:00">
         <header></header>
         <body>
             <trans-unit id="link.read_more" resname="link.read_more">
-                <source>Read more</source>
+                <source>&gt;&gt;read more</source>
             </trans-unit>
             <trans-unit id="error.no_news" resname="error.no_news">
-                <source>No news pages found.</source>
+                <source>No News Pages</source>
             </trans-unit>
             <trans-unit id="error.no_layout" resname="error.no_layout">
                 <source>Select a layout in the “Settings” tab of the News List plugin.</source>

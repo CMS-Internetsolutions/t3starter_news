@@ -44,7 +44,7 @@ GeneralUtility::makeInstance(IconRegistry::class)
         'apps-pagetree-t3starter-news',
         SvgIconProvider::class,
         [
-            'source' => 'EXT:t3starter_news/Resources/Public/Icons/NewsArticle.svg',
+            'source' => 'EXT:t3starter_news/Resources/Public/Icons/NewsPage.svg',
         ]
     );
 ExtensionUtility::configurePlugin(
