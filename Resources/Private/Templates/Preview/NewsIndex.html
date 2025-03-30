@@ -45,7 +45,9 @@
             <td>
                 <table>
                     <tr>
-                        <td>{layout}</td>
+                        <td>
+                            <f:be.infobox title="Error" iconName="status-dialog-error" state="{f:constant(name: 'TYPO3\CMS\Fluid\ViewHelpers\Be\InfoboxViewHelper::STATE_ERROR')}">{layout}</f:be.infobox>
+                        </td>
                     </tr>
                 </table>
             </td>
