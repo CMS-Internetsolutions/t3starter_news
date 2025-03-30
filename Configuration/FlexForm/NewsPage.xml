@@ -66,6 +66,7 @@
                         </config>
                     </settings.recursive>
 
+                    <!-- maxItems -->
                     <settings.maxItems>
                         <label>LLL:EXT:t3starter_news/Resources/Private/Language/locallang_be.xlf:flexform.maxItems</label>
                         <config>
@@ -74,6 +75,7 @@
                         </config>
                     </settings.maxItems>
 
+                    <!-- categoryRestriction -->
                     <settings.categoryRestriction>
                         <label>LLL:EXT:t3starter_news/Resources/Private/Language/locallang_be.xlf:flexform.categoryRestriction</label>
                         <config>
@@ -85,6 +87,20 @@
                             <maxitems>99</maxitems>
                         </config>
                     </settings.categoryRestriction>
+
+                    <!-- show -->
+                    <settings.showAuthor>
+                            <label>Deaktiviere Author Feld</label>
+                            <config>
+                                <type>check</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0"> </numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                    </settings.showAuthor>
+
                 </el>
             </ROOT>
         </sDEF>
