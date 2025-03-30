@@ -1,16 +1,16 @@
-TCEFORM.tt_content.layout.types.NewsList {
+TCEFORM.tt_content.layout.types.NewsPage {
     # Add another option:
 
     ## 1734035000
     addItems.1734035000 = LLL:EXT:t3starter_news/Resources/Private/Language/locallang_be.xlf:ttcontent.addItems.1734035000
-    addItems.1734035000.icon = EXT:t3starter_news/Resources/Public/Icons/Extension.svg
+    addItems.1734035000.icon = EXT:t3starter_news/Resources/Public/Icons/NewsPage.svg
     ### LLL bug not possible? for group
-    addItems.1734035000.group = News List
+    addItems.1734035000.group = News Index
 }
 
 # Remove space only over CSS
-TCEFORM.tt_content.space_before_class.types.NewsList.disabled = 1
-TCEFORM.tt_content.space_after_class.types.NewsList.disabled = 1
+TCEFORM.tt_content.space_before_class.types.NewsPage.disabled = 1
+TCEFORM.tt_content.space_after_class.types.NewsPage.disabled = 1
 
 # Remove Metadata for all pages not news and keywords for doktype 119
 [traverse(page, "doktype") == "119"]

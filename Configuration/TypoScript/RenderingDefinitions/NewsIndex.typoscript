@@ -1,7 +1,7 @@
 tt_content {
-  NewsList =< lib.contentElement
-  NewsList {
-    templateName = NewsList
+  NewsPage =< lib.contentElement
+  NewsPage {
+    templateName = NewsPage
     dataProcessing {
       10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
       10 {

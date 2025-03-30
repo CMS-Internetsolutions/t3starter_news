@@ -11,20 +11,20 @@ ExtensionManagementUtility::addTcaSelectItem(
     'CType',
     [
         $languageFilePrefix . 'CType.news_list',
-        'NewsList',
+        'NewsPage',
         'apps-pagetree-t3starter-news'
     ],
     'uploads',
     'after'
 );
 
-$GLOBALS['TCA']['tt_content']['types']['NewsList'] = [
+$GLOBALS['TCA']['tt_content']['types']['NewsPage'] = [
     'showitem' => '
     --palette--;' . $frontendLanguageFilePrefix . 'palette.general;general,
     --palette--;' . $frontendLanguageFilePrefix . 'palette.header;header,
     --div--;' . $languageFilePrefix . 'div.news,
      --palette--;' . $frontendLanguageFilePrefix . 'palette.frames;frames,
-    pi_flexform;' . $languageFilePrefix . 'CType.NewsList.flexform_pi,
+    pi_flexform;' . $languageFilePrefix . 'CType.NewsPage.flexform_pi,
     --div--;' . $frontendLanguageFilePrefix . 'tabs.appearance,
     --div--;' . $frontendLanguageFilePrefix . 'tabs.access,
     --palette--;' . $frontendLanguageFilePrefix . 'palette.visibility;visibility,
@@ -33,14 +33,14 @@ $GLOBALS['TCA']['tt_content']['types']['NewsList'] = [
     --div--;' . $coreTabsLanguageFilePrefix . 'categories,categories'
 ];
 //  @todo icon.php
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['NewsList'] = 'apps-pagetree-t3starter-news';
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['NewsPage'] = 'apps-pagetree-t3starter-news';
 
 
 // @todo deprecated 13
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist']['NewsList'] = 'recursive,select_key,pages';
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['NewsList'] = 'pi_flexform';
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist']['NewsPage'] = 'recursive,select_key,pages';
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['NewsPage'] = 'pi_flexform';
 ExtensionManagementUtility::addPiFlexFormValue(
     '',
-    'FILE:EXT:t3starter_news/Configuration/FlexForm/NewsList.xml',
-    'NewsList'
+    'FILE:EXT:t3starter_news/Configuration/FlexForm/NewsPage.xml',
+    'NewsPage'
 );

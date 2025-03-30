@@ -13,5 +13,5 @@ lib.contentElement {
   }
 }
 
-# Rendering Frontend
+# Typoscript Rendering Frontend
 @import 'EXT:t3starter_news/Configuration/TypoScript/RenderingDefinitions/'

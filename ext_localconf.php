@@ -49,7 +49,7 @@ GeneralUtility::makeInstance(IconRegistry::class)
     );
 ExtensionUtility::configurePlugin(
     't3starter_news',
-    'NewsList',
+    'NewsPage',
     [
         'T3starterNews' => 'list'
     ]

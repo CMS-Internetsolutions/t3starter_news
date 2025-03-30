@@ -10,13 +10,13 @@
                 <source>News datetime</source>
             </trans-unit>
             <trans-unit id="CType.news_list" resname="CType.news_list">
-                <source>News listing</source>
+                <source>News Index</source>
             </trans-unit>
-            <trans-unit id="CType.NewsList.flexform_pi" resname="CType.NewsList.flexform_pi">
+            <trans-unit id="CType.NewsPage.flexform_pi" resname="CType.NewsPage.flexform_pi">
                 <source>News Options</source>
             </trans-unit>
             <trans-unit id="wizard.title" resname="wizard.title">
-                <source>News Listing</source>
+                <source>News Index</source>
             </trans-unit>
             <trans-unit id="wizard.description" resname="wizard.description">
                 <source>List news articles with the possibility to filter by categories and page tree</source>
@@ -40,7 +40,7 @@
                 <source>News Settings</source>
             </trans-unit>
             <trans-unit id="title.abstract" resname="title.abstract">
-                <source>Teasertext / Newslist</source>
+                <source>Teasertext / Newspage</source>
             </trans-unit>
             <trans-unit id="description.abstract" resname="description.abstract">
                 <source>This text is displayed as teaser text in the news list.</source>

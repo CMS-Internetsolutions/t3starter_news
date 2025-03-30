@@ -1,14 +1,14 @@
 mod.wizards.newContentElement.wizardItems.t3starternews {
   header = T3Starter News
   elements {
-    NewsList {
+    NewsPage {
       iconIdentifier = apps-pagetree-t3starter-news
       title = LLL:EXT:t3starter_news/Resources/Private/Language/locallang_be.xlf:wizard.title
       description = LLL:EXT:t3starter_news/Resources/Private/Language/locallang_be.xlf:wizard.description
       tt_content_defValues {
-        CType = NewsList
+        CType = NewsPage
       }
     }
   }
-  show := addToList(NewsList)
+  show := addToList(NewsPage)
 }
