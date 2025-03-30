@@ -20,7 +20,14 @@
             </td>
             <td class="col-control">
                 <div class="btn" role="group">
-                    <be:link.editRecord table="tt_content" uid="{uid}" fields="pi_flexform" class="btn btn-default" returnUrl="{f:be.uri(route: 'web_layout', parameters: '{id: originPageId, function: functionId, language: languageId}')}">
+                    <be:link.editRecord
+                        uid="{uid}"
+                        table="tt_content"
+                        class="btn btn-default"
+                        fields="pi_flexform"
+                        returnUrl="{be:moduleLink(route:'web_layout', arguments:'{id: pid}')}"
+                        parameters="activeContentCollection=appearance"
+                    >
                         News Index Settings
                         <core:icon identifier="actions-open" size="small" />
                     </be:link.editRecord>
@@ -133,5 +140,3 @@
 <krexx:debug>{_all}</krexx:debug>
 --></f:comment>
 
-
-<krexx:debug>{_all}</krexx:debug>
