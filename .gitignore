@@ -1,6 +1,9 @@
 #Phpstorm
 /.idea/
 
+#Build Folder
+Build
+
 #Node
 node_modules/
 /node_modules

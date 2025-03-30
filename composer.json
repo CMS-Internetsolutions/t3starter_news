@@ -7,8 +7,7 @@
     ],
     "homepage": "https://github.com/CMS-Internetsolutions/t3starter_news",
   "keywords": [
-    "TYPO3",
-    "extension",
+    "Bootstrap",
     "News"
   ],
   "require": {
