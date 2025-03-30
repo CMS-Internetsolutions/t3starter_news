@@ -6,7 +6,7 @@
         <article class="row g-0 border-0 mb-4">
             <f:if condition="{newsItem.images -> f:count()} > 0">
                 <f:then>
-                    <f:link.page class="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5" style="background-image: url({f:uri.image(src: newsItem.images.0.uid, treatIdAsReference: '1')}); min-height: 16rem" pageUid="{newsItem.data.uid}"></f:link.page>
+                    <f:link.page class="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5" style="background-image: url({f:uri.image(src: newsItem.images.0.uid, treatIdAsReference: '1', minWidth: 300, maxWidth: 500)}); min-height: 16rem" pageUid="{newsItem.data.uid}"></f:link.page>
                 </f:then>
                 <f:else>
                     <f:link.page class="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5" style="background-image: url({f:uri.resource(path: 'EXT:t3starter_news/Resources/Public/Images/no-image-icon.jpg')}); min-height: 16rem" pageUid="{newsItem.data.uid}"></f:link.page>
