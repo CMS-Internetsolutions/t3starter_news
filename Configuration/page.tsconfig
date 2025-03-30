@@ -1,2 +1,10 @@
 @import 'EXT:t3starter_news/Configuration/TsConfig/mod/Wizard.tsconfig'
 @import 'EXT:t3starter_news/Configuration/TsConfig/Page/News.tsconfig'
+
+mod.web_layout {
+    tt_content {
+        preview {
+            NewsPage = EXT:t3starter_news/Resources/Private/Templates/Preview/NewsIndex.html
+        }
+    }
+}
