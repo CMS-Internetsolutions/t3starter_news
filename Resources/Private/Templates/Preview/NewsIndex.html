@@ -7,6 +7,46 @@
             <td>
                 <table>
                     <tr>
+                        <td>Layout</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <f:if condition="{layout} > 0">
+                                <f:then>
+                                    Ein Layout wurde ausgewählt
+                                </f:then>
+                                <f:else>
+                                    <f:be.infobox title="Error" iconName="status-dialog-error" state="{f:constant(name: 'TYPO3\CMS\Fluid\ViewHelpers\Be\InfoboxViewHelper::STATE_ERROR')}">Kein Layout ausgewählt!</f:be.infobox>
+                                </f:else>
+                            </f:if>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td class="col-control">
+                <div class="btn" role="group">
+                    <be:link.editRecord
+                        uid="{uid}"
+                        table="tt_content"
+                        class="btn btn-default"
+                        fields="layout"
+                        returnUrl="{be:moduleLink(route:'web_layout', arguments:'{id: pid}')}"
+                        parameters="activeContentCollection=appearance"
+                    >
+                        Layout Auswahl
+                        <core:icon identifier="actions-open" size="small" />
+                    </be:link.editRecord>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tr>
                         <td>Setting</td>
                     </tr>
                 </table>
@@ -32,27 +72,6 @@
                         <core:icon identifier="actions-open" size="small" />
                     </be:link.editRecord>
                 </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <table>
-                    <tr>
-                        <td>Layout</td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <table>
-                    <tr>
-                        <td>
-                            <f:be.infobox title="Error" iconName="status-dialog-error" state="{f:constant(name: 'TYPO3\CMS\Fluid\ViewHelpers\Be\InfoboxViewHelper::STATE_ERROR')}">{layout}</f:be.infobox>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-            <td class="col-control">
-
             </td>
         </tr>
         <tr>
