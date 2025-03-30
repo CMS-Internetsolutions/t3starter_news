@@ -1,9 +1,4 @@
-Settings:<br>
-Layout = {layout}<br>
-News Folder = {pi_flexform_transformed.settings.startingpoint}<br>
-Settings recusive = {pi_flexform_transformed.settings.recursive}<br>
-Settings maxItems = {pi_flexform_transformed.settings.maxItems}<br>
-Settings Category = {pi_flexform_transformed.settings.categoryRestriction}<br>
+{namespace be=TYPO3\CMS\Backend\ViewHelpers}
 
 <div class="table-fit">
     <table class="table table-striped table-hover">
@@ -12,23 +7,23 @@ Settings Category = {pi_flexform_transformed.settings.categoryRestriction}<br>
             <td>
                 <table>
                     <tr>
-                        <td>Cell 1</td>
+                        <td>Setting</td>
                     </tr>
                 </table>
             </td>
             <td>
                 <table>
                     <tr>
-                        <td>Cell 1</td>
+                        <td>Value</td>
                     </tr>
                 </table>
             </td>
             <td class="col-control">
-                <div class="btn-group" role="group">
-                    <a class="btn btn-default" href="#" title="#">
-                        General
+                <div class="btn" role="group">
+                    <be:link.editRecord table="tt_content" uid="{uid}" fields="pi_flexform" class="btn btn-default" returnUrl="{f:be.uri(route: 'web_layout', parameters: '{id: originPageId, function: functionId, language: languageId}')}">
+                        News Index Settings
                         <core:icon identifier="actions-open" size="small" />
-                    </a>
+                    </be:link.editRecord>
                 </div>
             </td>
         </tr>
@@ -36,24 +31,95 @@ Settings Category = {pi_flexform_transformed.settings.categoryRestriction}<br>
             <td>
                 <table>
                     <tr>
-                        <td>Cell 1</td>
+                        <td>Layout</td>
                     </tr>
                 </table>
             </td>
             <td>
                 <table>
                     <tr>
-                        <td>Cell 1</td>
+                        <td>{layout}</td>
                     </tr>
                 </table>
             </td>
             <td class="col-control">
-                <div class="btn-group" role="group">
-                    <a class="btn btn-default" href="#" title="#">
-                        Allgemein
-                        <core:icon identifier="actions-open" size="small" />
-                    </a>
-                </div>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>News Folder</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>{pi_flexform_transformed.settings.startingpoint}</td>
+                    </tr>
+                </table>
+            </td>
+            <td class="col-control">
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>recusive</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>{pi_flexform_transformed.settings.recursive}</td>
+                    </tr>
+                </table>
+            </td>
+            <td class="col-control">
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>maxItems</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>{pi_flexform_transformed.settings.maxItems}</td>
+                    </tr>
+                </table>
+            </td>
+            <td class="col-control">
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>Category</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>{pi_flexform_transformed.settings.categoryRestriction}</td>
+                    </tr>
+                </table>
+            </td>
+            <td class="col-control">
+
             </td>
         </tr>
         </tbody>
@@ -66,3 +132,6 @@ Settings Category = {pi_flexform_transformed.settings.categoryRestriction}<br>
 <f:comment><!--
 <krexx:debug>{_all}</krexx:debug>
 --></f:comment>
+
+
+<krexx:debug>{_all}</krexx:debug>
