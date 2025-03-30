@@ -47,14 +47,14 @@
             <td>
                 <table>
                     <tr>
-                        <td>Setting</td>
+                        <td>News Folder</td>
                     </tr>
                 </table>
             </td>
             <td>
                 <table>
                     <tr>
-                        <td>Value</td>
+                        <td>{pi_flexform_transformed.settings.startingpoint}</td>
                     </tr>
                 </table>
             </td>
@@ -78,25 +78,6 @@
             <td>
                 <table>
                     <tr>
-                        <td>News Folder</td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <table>
-                    <tr>
-                        <td>{pi_flexform_transformed.settings.startingpoint}</td>
-                    </tr>
-                </table>
-            </td>
-            <td class="col-control">
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <table>
-                    <tr>
                         <td>recusive</td>
                     </tr>
                 </table>
@@ -104,7 +85,16 @@
             <td>
                 <table>
                     <tr>
-                        <td>{pi_flexform_transformed.settings.recursive}</td>
+                        <td>
+                            <f:switch expression="{pi_flexform_transformed.settings.recursive}">
+                                <f:case value="0">Nur die ausgewählte Seite</f:case>
+                                <f:case value="1">1 Ebene</f:case>
+                                <f:case value="2">1 Ebenen</f:case>
+                                <f:case value="3">1 Ebenen</f:case>
+                                <f:case value="4">1 Ebenen</f:case>
+                                <f:case value="250">Unendlich</f:case>
+                            </f:switch>
+                        </td>
                     </tr>
                 </table>
             </td>
