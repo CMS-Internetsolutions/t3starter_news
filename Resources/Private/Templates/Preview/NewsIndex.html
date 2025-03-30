@@ -123,7 +123,16 @@
             <td>
                 <table>
                     <tr>
-                        <td>{pi_flexform_transformed.settings.maxItems}</td>
+                        <td>
+                            <f:if condition="{pi_flexform_transformed.settings.maxItems} > 0">
+                                <f:then>
+                                    {pi_flexform_transformed.settings.maxItems}
+                                </f:then>
+                                <f:else>
+                                    Keine Auswahl, alle News Seiten werden angezeigt.
+                                </f:else>
+                            </f:if>
+                        </td>
                     </tr>
                 </table>
             </td>
@@ -142,7 +151,16 @@
             <td>
                 <table>
                     <tr>
-                        <td>{pi_flexform_transformed.settings.categoryRestriction}</td>
+                        <td>
+                            <f:if condition="{pi_flexform_transformed.settings.categoryRestriction} > 0">
+                                <f:then>
+                                    {pi_flexform_transformed.settings.categoryRestriction}
+                                </f:then>
+                                <f:else>
+                                    Keine Auswahl, alle Kategorien werden angezeigt.
+                                </f:else>
+                            </f:if>
+                        </td>
                     </tr>
                 </table>
             </td>
