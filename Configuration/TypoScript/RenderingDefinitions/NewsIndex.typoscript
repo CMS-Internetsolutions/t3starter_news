@@ -54,7 +54,6 @@ tt_content {
         }
       }
     }
-
     settings {
       list {
         ## https://www.php.net/manual/de/datetime.format.php
@@ -65,3 +64,4 @@ tt_content {
   }
 }
 
+#https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/FlexForms/Index.html
