@@ -1,4 +1,4 @@
 name: t3starter/t3starter-news
-label: T3Starter News
+label: T3Starter News Extension
 dependencies:
   - typo3/fluid-styled-content

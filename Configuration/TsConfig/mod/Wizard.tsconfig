@@ -1,5 +1,5 @@
 mod.wizards.newContentElement.wizardItems.t3starternews {
-  header = T3Starter News
+  header = News
   elements {
     NewsPage {
       iconIdentifier = apps-pagetree-t3starter-news

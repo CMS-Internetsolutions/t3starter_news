@@ -1,7 +1,7 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'T3Starter News',
+    'title' => 'T3Starter News Extension',
     'description' => 'Very simple news extension optimized for Bootstrap 5.3.',
     'category' => 'fe',
     'version' => '1.0.0',
