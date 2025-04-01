@@ -16,5 +16,10 @@ $EM_CONF[$_EXTKEY] = [
             'indexed_search' => '12.4.0-13.4.99',
         ],
         'conflicts' => [],
+    ],
+    'autoload' => [
+        'psr-4' => [
+            'T3starter\\T3starterNews\\' => 'Classes',
+        ],
     ]
 ];

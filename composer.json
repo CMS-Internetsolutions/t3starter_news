@@ -17,7 +17,7 @@
   },
     "autoload": {
         "psr-4": {
-            "T3starter\\SiteMastertheme\\": "Classes/"
+            "T3starter\\T3starterNews\\": "Classes/"
         }
     },
     "extra": {
