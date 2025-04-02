@@ -41,7 +41,8 @@ tt_content {
           20 {
             table = sys_category
             selectFields = sys_category.title
-            pidInList.data = leveluid : 0
+            #pidInList.data = leveluid : 0
+            pidInList.data = site:rootPageId
             recursive = 99
             leftjoin = sys_category_record_mm ON sys_category_record_mm.uid_local = sys_category.uid
             where {

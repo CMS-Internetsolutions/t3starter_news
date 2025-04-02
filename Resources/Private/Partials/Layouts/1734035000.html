@@ -1,15 +1,19 @@
 <html xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers" data-namespace-typo3-fluid="true">
 
 <f:comment><!-- List  --></f:comment>
-<f:for each="{news}" as="newsItem">
-    <div class="container">
+<div class="container">
+    <f:for each="{news}" as="newsItem">
         <article class="row g-0 border-0 mb-4">
             <f:if condition="{newsItem.images -> f:count()} > 0">
                 <f:then>
-                    <f:link.page class="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5" style="background-image: url({f:uri.image(src: newsItem.images.0.uid, treatIdAsReference: '1', minWidth: 300, maxWidth: 500)}); min-height: 16rem" pageUid="{newsItem.data.uid}"></f:link.page>
+                    <f:link.page class="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5"
+                                 style="background-image: url({f:uri.image(src: newsItem.images.0.uid, treatIdAsReference: '1', minWidth: 300, maxWidth: 500)}); min-height: 16rem"
+                                 pageUid="{newsItem.data.uid}"></f:link.page>
                 </f:then>
                 <f:else>
-                    <f:link.page class="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5" style="background-image: url({f:uri.resource(path: 'EXT:t3starter_news/Resources/Public/Images/no-image-icon.jpg')}); min-height: 16rem" pageUid="{newsItem.data.uid}"></f:link.page>
+                    <f:link.page class="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5"
+                                 style="background-image: url({f:uri.resource(path: 'EXT:t3starter_news/Resources/Public/Images/no-image-icon.jpg')}); min-height: 16rem"
+                                 pageUid="{newsItem.data.uid}"></f:link.page>
                 </f:else>
             </f:if>
             <div class="col-sm-7 col-lg-8">
@@ -54,15 +58,16 @@
                             {newsItem.data.lastUpdated ->
                     f:format.date(format:'{settings.list.dateFormat}')}
                         </span>
-                        <span class="fs-xs opacity-20 mt-2 mx-3">|</span>
                         <f:if condition="{newsItem.newsCategories}">
+                            <span class="fs-xs opacity-20 mt-2 mx-3">|</span>
                             <f:for each="{newsItem.newsCategories}" as="category" iteration="iterator">
-                                <span class="badge text-nav fs-xs border mt-2 me-1">{category.data.title}</span>
+                                <span class="badge text-primary fs-xs border mt-2 me-1">{category.data.title}</span>
                             </f:for>
                         </f:if>
                     </div>
                 </div>
             </div>
         </article>
-</f:for>
+    </f:for>
+</div>
 </html>
