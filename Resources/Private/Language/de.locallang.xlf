@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" target-language="de" original="" datatype="plaintext" date="2025-03-29T22:50:15+01:00">
+    <file source-language="en" target-language="de" original="" datatype="plaintext" date="2025-04-03T13:40:32+02:00">
         <body>
             <trans-unit id="link.read_more" resname="link.read_more">
-                <source>&gt;&gt;read more</source>
-                <target>&gt;&gt;mehr lesen</target>
+                <source>read more</source>
+                <target>mehr lesen</target>
             </trans-unit>
             <trans-unit id="error.no_news" resname="error.no_news">
                 <source>No News Pages</source>
