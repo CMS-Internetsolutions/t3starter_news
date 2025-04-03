@@ -59,9 +59,9 @@
                     f:format.date(format:'{settings.list.dateFormat}')}
                         </span>
                         <f:if condition="{newsItem.newsCategories}">
-                            <span class="fs-xs opacity-20 mt-2 mx-3">|</span>
+                            <span class="fs-xs opacity-20 mt-2 mx-3">| Themenbereich:</span>
                             <f:for each="{newsItem.newsCategories}" as="category" iteration="iterator">
-                                <span class="badge text-primary fs-xs border mt-2 me-1">{category.data.title}</span>
+                                <span class="fs-sm text-body-secondary mt-2">{category.data.title}</span>
                             </f:for>
                         </f:if>
                     </div>
