@@ -31,7 +31,7 @@
                     <p class="d-sm-none d-md-block">
                         <f:if condition="{newsItem.data.abstract}">
                             {newsItem.data.abstract -> f:format.nl2br()}
-                            <f:link.page class="link-primary text-decoration-none fs-sm text-body-secondary me-2"
+                            <f:link.page class="link-primary text-decoration-none fs-sm text-body-secondary d-block pt-3 text-end"
                                          pageUid="{newsItem.data.uid}">
                                 <f:translate
                                     key="LLL:EXT:t3starter_news/Resources/Private/Language/locallang.xlf:link.read_more"/>
